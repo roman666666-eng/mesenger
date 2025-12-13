@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71d6b2e8-8872-41c2-ba58-40a9e8965414" name="Changes" comment="test">
-      <change afterPath="$PROJECT_DIR$/mesenger.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mesenger_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/mesenger_client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mesenger_protocol.py" beforeDir="false" afterPath="$PROJECT_DIR$/mesenger_protocol.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mesenger_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/mesenger_server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setings.txt" beforeDir="false" afterPath="$PROJECT_DIR$/setings.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +138,23 @@
       <option name="project" value="LOCAL" />
       <updated>1765646904536</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="test">
+      <option name="closed" value="true" />
+      <created>1765650367386</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1765650367386</updated>
+    </task>
+    <task id="LOCAL-00007" summary="test">
+      <option name="closed" value="true" />
+      <created>1765650432197</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1765650432197</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="UnknownFeatures">
