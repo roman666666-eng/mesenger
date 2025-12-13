@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71d6b2e8-8872-41c2-ba58-40a9e8965414" name="Changes" comment="test">
-      <change beforePath="$PROJECT_DIR$/setings.txt" beforeDir="false" afterPath="$PROJECT_DIR$/setings.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesenger_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/mesenger_server.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +154,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765650432197</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="test">
+      <option name="closed" value="true" />
+      <created>1765651116902</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1765651116902</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="UnknownFeatures">
