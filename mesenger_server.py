@@ -1,11 +1,12 @@
 import socket as so
 from collections import deque
-import mesenger_protocol
+import mesenger_protocol as pr
 
 users = {}  # name:user
 rooms = {}  # name:room
 unadded = {}  # (ip,port):socket
 s = so.socket()
+
 
 def main():
     global unadded
@@ -32,11 +33,12 @@ class user:
         return type(self) == type(us) and self.addres == us.addres
 
     def reciv(self):
-        l = int(recive(self.socket, 3).decode())
-        return recive(self.socket, l).decode()
+        w,l,t,msg = pr.get_msg(self.socket)
+        if w:
+            return msg
 
     def snd(self, msg: str):
-        self.socket.send((str(len(msg.encode())).zfill(3) + msg).encode())
+        pr.send_msg(self.socket,msg)
 
 
 class room:
@@ -62,11 +64,18 @@ class room:
                     j.snd(msg)
 
 
+def close_command(s2: str) -> str:
+    def levenshtein(s1: str) -> int:
+        f = [[i + j if i * j == 0 else 0 for j in range(len(s2) + 1)] for i in range(len(s1) + 1)]
+        for i in range(1, len(s1) + 1):
+            for j in range(1, len(s2) + 1):
+                f[i][j] = f[i - 1][j - 1] if s1[i - 1] == s2[j - 1] else 1 + min(f[i][j - 1], f[i - 1][j],
+                                                                                 f[i - 1][j - 1])
+        return f[len(s1)][len(s2)]
 
-
-
-
-
+    commands = (
+        '!help', '!name', '!cls', '!private', '!create', '!join', '!exitroom', '!rooms', '!room', '!whoin', '!whoami')
+    return min(commands, key=levenshtein)
 
 
 if __name__ == '__main__':
