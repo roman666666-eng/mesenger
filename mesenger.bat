@@ -12,4 +12,5 @@ IF "%InstallFlag%" EQU "0" (
     %CD%\.venv\Scripts\python.exe mesenger_install.py
 )
 ENDLOCAL
- %CD%\.venv\Scripts\python.exe mesenger_client.py
+
+%CD%\.venv\Scripts\python.exe mesenger_client.py
