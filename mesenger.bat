@@ -1,2 +1,2 @@
 @echo off
-python mesenger_client.py
+ %CD%\.venv\Scripts\python.exe mesenger_client.py
