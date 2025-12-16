@@ -11,7 +11,6 @@ lastfstlength = 0
 
 
 
-
 def printmsg(msg1: str, msg2: str = ''):
     global lastlength
     global lastfstlength
